@@ -1,18 +1,20 @@
 package com.karuite.weixin.util;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.karuite.weixin.util.pojo.Game;
 import com.karuite.weixin.util.pojo.GameRound;
 import com.karuite.weixin.util.pojo.Knowledge;
 import com.karuite.weixin.util.pojo.UserLocation;
+import javax.sql.DataSource;
+import com.mchange.v2.c3p0.DataSources;
 
 /**
  * Mysql数据库操作类
@@ -21,21 +23,54 @@ import com.karuite.weixin.util.pojo.UserLocation;
  * @date 2013-11-21
  */
 public class MySQLUtil {
-	
-	public Connection getConn() {
-		String url = "jdbc:mysql://120.25.209.211:3306/karuite?useUnicode=true&characterEncoding=utf8";
-		String username = "root";
-		String password = "123456";
-		Connection conn = null;
+
+	private static String url = "jdbc:mysql://localhost:3306/karuite?useUnicode=true&characterEncoding=utf8";;
+	private static String username = "root";
+	private static String pwd = "123456";
+
+	private static DataSource ds_pooled;
+	/**  
+	 *  加载数据库连接的配置文件和驱动 
+	 */
+	static {
 		try {
-			// 加载MySQL驱动
+			//加载驱动类  
 			Class.forName("com.mysql.jdbc.Driver");
-			// 获取数据库连接
-			conn = DriverManager.getConnection(url, username, password);
+			//设置连接数据库的配置信息  
+			DataSource ds_unpooled = DataSources.unpooledDataSource(url,
+					username, pwd);
+
+			Map<String, Object> pool_conf = new HashMap<String, Object>();
+			//设置连接池参数
+			pool_conf.put("initialPoolSize", 3);
+			pool_conf.put("minPoolSize", 3);
+			pool_conf.put("maxPoolSize", 5);
+			pool_conf.put("acquireIncrement", 3);
+			pool_conf.put("maxStatements", 8);
+			pool_conf.put("maxStatementsPerConnection", 5);
+			pool_conf.put("maxIdleTime", 1800);
+			
+			ds_pooled = DataSources.pooledDataSource(ds_unpooled, pool_conf);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return conn;
+	}
+
+	/** 
+	 * 释放连接池资源 
+	 */
+	public void clearup() {
+		if (ds_pooled != null) {
+			try {
+				DataSources.destroy(ds_pooled);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	public Connection getConn() throws SQLException {
+		return ds_pooled.getConnection();
 	}
 
 	/**
@@ -45,7 +80,8 @@ public class MySQLUtil {
 	 * @param ps
 	 * @param rs 记录集
 	 */
-	public void releaseResources(Connection conn, PreparedStatement ps, ResultSet rs) {
+	public void releaseResources(Connection conn, PreparedStatement ps,
+			ResultSet rs) {
 		try {
 			if (null != rs)
 				rs.close();
@@ -266,7 +302,7 @@ public class MySQLUtil {
 		}
 		return scoreMap;
 	}
-	
+
 	/**
 	 * 获取问答知识表中所有记录
 	 * 
@@ -400,7 +436,8 @@ public class MySQLUtil {
 	 * @param respMsg 公众账号回复的消息
 	 * @param chatCategory 聊天类别
 	 */
-	public static void saveChatLog(String openId, String createTime, String reqMsg, String respMsg, int chatCategory) {
+	public static void saveChatLog(String openId, String createTime,
+			String reqMsg, String respMsg, int chatCategory) {
 		String sql = "insert into chat_log(open_id, create_time, req_msg, resp_msg, chat_category) values(?, ?, ?, ?, ?)";
 
 		MySQLUtil mysqlUtil = new MySQLUtil();
@@ -423,7 +460,7 @@ public class MySQLUtil {
 			mysqlUtil.releaseResources(conn, ps, rs);
 		}
 	}
-	
+
 	/**
 	 * 保存用户地理位置
 	 * 
@@ -434,7 +471,8 @@ public class MySQLUtil {
 	 * @param bd09_lng 经过百度坐标转换后的经度
 	 * @param bd09_lat 经过百度坐标转换后的纬度
 	 */
-	public static void saveUserLocation(String openId, String lng, String lat, String bd09_lng, String bd09_lat) {
+	public static void saveUserLocation(String openId, String lng, String lat,
+			String bd09_lng, String bd09_lat) {
 		String sql = "insert into user_location(open_id, lng, lat, bd09_lng, bd09_lat) values (?, ?, ?, ?, ?)";
 		try {
 			Connection conn = new MySQLUtil().getConn();
