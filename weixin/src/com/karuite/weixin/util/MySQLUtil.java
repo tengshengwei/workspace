@@ -49,7 +49,7 @@ public class MySQLUtil {
 			pool_conf.put("maxStatements", 8);
 			pool_conf.put("maxStatementsPerConnection", 5);
 			pool_conf.put("maxIdleTime", 1800);
-			
+
 			ds_pooled = DataSources.pooledDataSource(ds_unpooled, pool_conf);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -523,5 +523,9 @@ public class MySQLUtil {
 		}
 		return userLocation;
 	}
-	
+
+	public static void main(String[] args) {
+		String joke = getJoke();
+		System.out.println(joke);
+	}
 }
