@@ -63,83 +63,83 @@ public class CoreService {
   
             // 文本消息
 			if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_TEXT)) {
-				String content = requestMap.get("Content").trim();
-				if (content.equals("附近")) {
-					respContent = getUsage();
-				}
-				// 周边搜索
-				else if (content.startsWith("附近")) {
-					String keyWord = content.replaceAll("附近", "").trim();
-					// 获取用户最后一次发送的地理位置
-					UserLocation location = MySQLUtil.getLastLocation(fromUserName);
-					// 未获取到
-					if (null == location) {
-						respContent = getUsage();
-					} else {
-						// 根据转换后（纠偏）的坐标搜索周边POI
-						List<BaiduPlace> placeList = BaiduMapUtil.searchPlace(keyWord, location.getBd09Lng(), location.getBd09Lat());
-						// 未搜索到POI
-						if (null == placeList || 0 == placeList.size()) {
-							respContent = String.format("/难过，您发送的位置附近未搜索到“%s”信息！", keyWord);
-						} else {
-							List<Article> articleList = BaiduMapUtil.makeArticleList(placeList, location.getBd09Lng(), location.getBd09Lat());
-							// 回复图文消息
-							NewsMessage newsMessage = new NewsMessage();
-							newsMessage.setToUserName(fromUserName);
-							newsMessage.setFromUserName(toUserName);
-							newsMessage.setCreateTime(new Date().getTime());
-							newsMessage.setMsgType(MessageUtil.RESP_MESSAGE_TYPE_NEWS);
-							newsMessage.setArticles(articleList);
-							newsMessage.setArticleCount(articleList.size());
-							respMessage = MessageUtil.messageToXml(newsMessage);
-							return respMessage; 
-						}
-					}
-				} else {
-					respContent = ChatService.chat(fromUserName, createTime, content);
-				}
+//				String content = requestMap.get("Content").trim();
+//				if (content.equals("附近")) {
+//					respContent = getUsage();
+//				}
+//				// 周边搜索
+//				else if (content.startsWith("附近")) {
+//					String keyWord = content.replaceAll("附近", "").trim();
+//					// 获取用户最后一次发送的地理位置
+//					UserLocation location = MySQLUtil.getLastLocation(fromUserName);
+//					// 未获取到
+//					if (null == location) {
+//						respContent = getUsage();
+//					} else {
+//						// 根据转换后（纠偏）的坐标搜索周边POI
+//						List<BaiduPlace> placeList = BaiduMapUtil.searchPlace(keyWord, location.getBd09Lng(), location.getBd09Lat());
+//						// 未搜索到POI
+//						if (null == placeList || 0 == placeList.size()) {
+//							respContent = String.format("/难过，您发送的位置附近未搜索到“%s”信息！", keyWord);
+//						} else {
+//							List<Article> articleList = BaiduMapUtil.makeArticleList(placeList, location.getBd09Lng(), location.getBd09Lat());
+//							// 回复图文消息
+//							NewsMessage newsMessage = new NewsMessage();
+//							newsMessage.setToUserName(fromUserName);
+//							newsMessage.setFromUserName(toUserName);
+//							newsMessage.setCreateTime(new Date().getTime());
+//							newsMessage.setMsgType(MessageUtil.RESP_MESSAGE_TYPE_NEWS);
+//							newsMessage.setArticles(articleList);
+//							newsMessage.setArticleCount(articleList.size());
+//							respMessage = MessageUtil.messageToXml(newsMessage);
+//							return respMessage; 
+//						}
+//					}
+//				} else {
+//					respContent = ChatService.chat(fromUserName, createTime, content);
+//				}
 			}
             // 图片消息  
             else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_IMAGE)) {  
-            	respContent = "正在建设，稍后上线！";  
+            //	respContent = "正在建设，稍后上线！";  
             }  
             // 地理位置消息  
             else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_LOCATION)) {  
-            	// 用户发送的经纬度
-				String lng = requestMap.get("Location_Y");
-				String lat = requestMap.get("Location_X");
-				// 坐标转换后的经纬度
-				String bd09Lng = null;
-				String bd09Lat = null;
-				// 调用接口转换坐标
-				UserLocation userLocation = BaiduMapUtil.convertCoord(lng, lat);
-				if (null != userLocation) {
-					bd09Lng = userLocation.getBd09Lng();
-					bd09Lat = userLocation.getBd09Lat();
-				}
-				// 保存用户地理位置
-				MySQLUtil.saveUserLocation(fromUserName, lng, lat, bd09Lng, bd09Lat);
-
-				StringBuffer buffer = new StringBuffer();
-				buffer.append("[愉快]").append("成功接收您的位置！").append("\n\n");
-				buffer.append("您可以输入搜索关键词获取周边信息了，例如：").append("\n");
-				buffer.append("        附近ATM").append("\n");
-				buffer.append("        附近KTV").append("\n");
-				buffer.append("        附近厕所").append("\n");
-				buffer.append("必须以“附近”两个字开头！");
-				respContent = buffer.toString(); 
+//            	// 用户发送的经纬度
+//				String lng = requestMap.get("Location_Y");
+//				String lat = requestMap.get("Location_X");
+//				// 坐标转换后的经纬度
+//				String bd09Lng = null;
+//				String bd09Lat = null;
+//				// 调用接口转换坐标
+//				UserLocation userLocation = BaiduMapUtil.convertCoord(lng, lat);
+//				if (null != userLocation) {
+//					bd09Lng = userLocation.getBd09Lng();
+//					bd09Lat = userLocation.getBd09Lat();
+//				}
+//				// 保存用户地理位置
+//				MySQLUtil.saveUserLocation(fromUserName, lng, lat, bd09Lng, bd09Lat);
+//
+//				StringBuffer buffer = new StringBuffer();
+//				buffer.append("[愉快]").append("成功接收您的位置！").append("\n\n");
+//				buffer.append("您可以输入搜索关键词获取周边信息了，例如：").append("\n");
+//				buffer.append("        附近ATM").append("\n");
+//				buffer.append("        附近KTV").append("\n");
+//				buffer.append("        附近厕所").append("\n");
+//				buffer.append("必须以“附近”两个字开头！");
+//				respContent = buffer.toString(); 
             }  
             // 链接消息  
             else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_LINK)) {  
-            	respContent = "正在建设，稍后上线！";  
+            //	respContent = "正在建设，稍后上线！";  
             }  
             // 音频消息  
             else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_VOICE)) {  
-            	respContent = "正在建设，稍后上线！";  
+            //	respContent = "正在建设，稍后上线！";  
             }
             // 音频消息  
             else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_VIDEO)) {  
-            	respContent = "正在建设，稍后上线！";  
+            //	respContent = "正在建设，稍后上线！";  
             }  
             // 事件推送  
             else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_EVENT)) {  
@@ -147,7 +147,7 @@ public class CoreService {
                 String eventType = requestMap.get("Event");  
                 // 订阅  
                 if (eventType.equals(MessageUtil.EVENT_TYPE_SUBSCRIBE)) {  
-                    respContent = "感谢您关注了【天玓业主交流平台】，系统功能仅对天玓业主开放，更多惊喜等着您哦~~！";
+                    respContent = "感谢您关注了【1989网络咨询】，我们的" + "<a href='http://blog.csdn.net/lyq8479'>官网</a>" + "已经正式上线了~~！";
                     
                 }  
                 // 取消订阅  
@@ -156,41 +156,41 @@ public class CoreService {
                 }  
                 // 自定义菜单点击事件  
                 else if (eventType.equals(MessageUtil.EVENT_TYPE_CLICK)) {  
-                    // 事件KEY值，与创建自定义菜单时指定的KEY值对应  
-                    String eventKey = requestMap.get("EventKey");  
-  
-                    if (eventKey.equals("12")) {  
-                        respContent = "正在建设，稍后上线！";  
-                    } else if (eventKey.equals("13")) {  
-                        respContent = "正在建设，稍后上线！";  
-                    } else if (eventKey.equals("14")) {  
-                        respContent = getUsage();  
-                    } else if (eventKey.equals("21")) {  
-                    	respContent = "正在建设，稍后上线！";  
-                    } else if (eventKey.equals("22")) {  
-                    	respContent = "正在建设，稍后上线！";  
-                    } else if (eventKey.equals("23")) { 
-                    	respContent = "正在建设，稍后上线！";  
-                    } else if (eventKey.equals("31")) {
-                    	respContent = "正在建设，稍后上线！";  
-                    } else if (eventKey.equals("32")) {  
-                        respContent = "正在建设，稍后上线！";  
-                    } else if (eventKey.equals("33")) {  
-                        respContent = "正在建设，稍后上线！";  
-                    } else if (eventKey.equals("34")) {  
-                    	respContent = "正在建设，稍后上线！";  
-                    } else if (eventKey.equals("35"))
-                    {
-                    	respContent = "正在建设，稍后上线！";  
-                    }
+//                    // 事件KEY值，与创建自定义菜单时指定的KEY值对应  
+//                    String eventKey = requestMap.get("EventKey");  
+//  
+//                    if (eventKey.equals("12")) {  
+//                        respContent = "正在建设，稍后上线！";  
+//                    } else if (eventKey.equals("13")) {  
+//                        respContent = "正在建设，稍后上线！";  
+//                    } else if (eventKey.equals("14")) {  
+//                        respContent = getUsage();  
+//                    } else if (eventKey.equals("21")) {  
+//                    	respContent = "正在建设，稍后上线！";  
+//                    } else if (eventKey.equals("22")) {  
+//                    	respContent = "正在建设，稍后上线！";  
+//                    } else if (eventKey.equals("23")) { 
+//                    	respContent = "正在建设，稍后上线！";  
+//                    } else if (eventKey.equals("31")) {
+//                    	respContent = "正在建设，稍后上线！";  
+//                    } else if (eventKey.equals("32")) {  
+//                        respContent = "正在建设，稍后上线！";  
+//                    } else if (eventKey.equals("33")) {  
+//                        respContent = "正在建设，稍后上线！";  
+//                    } else if (eventKey.equals("34")) {  
+//                    	respContent = "正在建设，稍后上线！";  
+//                    } else if (eventKey.equals("35"))
+//                    {
+//                    	respContent = "正在建设，稍后上线！";  
+//                    }
                 } 
                 // 二维码扫描
                 else if (eventType.equals(MessageUtil.EVENT_TYPE_SCAN)) {  
-                	respContent = "二维码正在建设，稍后上线！";  
+                //	respContent = "二维码正在建设，稍后上线！";  
                 }
                 // 上报地理位置
                 else if (eventType.equals(MessageUtil.EVENT_TYPE_LOCATION)) {  
-            		respContent = "上报地理位置功能还在开发中，请您耐心等待！";  
+            	//	respContent = "上报地理位置功能还在开发中，请您耐心等待！";  
                 }
             }  
   

@@ -9,14 +9,16 @@
     <title><sitemesh:write property='title'/></title>
     
     <meta charset="UTF-8">
-   	<!-- 此时表示根据设备的大小调整页面的显示宽度 -->
-   	<meta name="viewport" content="width=device-width,initial-scale=1">
-   	<!-- bootstrap需要jquery的支持，所以要导入jquery包 -->
-   	<script type="text/javascript" src="${ctx }/front/js/jquery.min.js"></script>
-    <!-- bootstrap需要的一些组件 *.js -->
-   	<script type="text/javascript" src="${ctx }/front/bootstrap/js/bootstrap.min.js"></script>
-   	<!-- bootstrap需要的一些基础样式 *.js -->
-   	<link rel="stylesheet" type="text/css" href="${ctx }/front/bootstrap/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <link rel="stylesheet" href="http://www.tengshengwei.com/static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://www.tengshengwei.com/static/css/bootstrap-maizi.css"/>
+    <link rel="stylesheet" href="http://www.tengshengwei.com/static/css/animate.css"/>
+    
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://www.tengshengwei.com/static/js/bootstrap.min.js"></script>
+	<script src="http://www.tengshengwei.com/static/js/jquery.singlePageNav.min.js"></script>
+	<script src="http://www.tengshengwei.com/static/js/wow.min.js"></script>
    	
    	<!-- head front -->
     <sitemesh:write property='head'/>
