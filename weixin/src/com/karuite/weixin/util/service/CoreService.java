@@ -147,7 +147,7 @@ public class CoreService {
                 String eventType = requestMap.get("Event");  
                 // 订阅  
                 if (eventType.equals(MessageUtil.EVENT_TYPE_SUBSCRIBE)) {  
-                    respContent = "感谢您关注了【1989网络咨询】，我们的" + "<a href='http://blog.csdn.net/lyq8479'>官网</a>" + "已经正式上线了~~！";
+                    respContent = "感谢您关注了【1989网络咨询】";
                     
                 }  
                 // 取消订阅  
