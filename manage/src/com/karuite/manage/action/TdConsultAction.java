@@ -20,10 +20,10 @@ public class TdConsultAction extends BaseAction<TdConsult> {
 	
 	public String consult() throws Exception {
 
-		String sql = "select * from consulter where username = ? and password = ?";
+		String sql = "select * from t_customer_advisory where username = ?";
 		//(Object[]) null
-		List<TdConsult> tdConsult = tdConsultService.find(TdConsult.class, sql, new Object[]{"滕声威", "123456"});
-		logger.info(StringUtil.getPreparedSQL(sql, new Object[]{"滕声威", "123456"}));
+		List<TdConsult> tdConsult = tdConsultService.find(TdConsult.class, sql, new Object[]{"tengshengwei"});
+		logger.info(StringUtil.getPreparedSQL(sql, new Object[]{"tengshengwei"}));
 		logger.info("这是一条从TdConsultAction产生的info信息,debug信息无法打印！");
 		
 		return SUCCESS;

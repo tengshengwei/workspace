@@ -7,7 +7,6 @@
   <!-- 指明满足"/*.jsp*"的页面，将被排除，不被装饰 -->
   <mapping path="/pay.jsp*" exclue="true" />
   <mapping path="/error.jsp*" exclue="true" />
-  <mapping path="/index.jsp*" exclue="true" />
    
 </sitemesh>  
 

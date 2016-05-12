@@ -5,7 +5,7 @@
   <mapping path="/*" decorator="/decorator.jsp"/> 
   
   <!-- 指明满足"/*.jsp*"的页面，将被排除，不被装饰 -->
-  <mapping path="/index.jsp*" exclue="true" /> 
-   
+  <mapping path="/index.jsp*" exclue="true" />
+  <mapping path="/tblConsult/consult.html*" exclue="true" /> 
 </sitemesh>  
 

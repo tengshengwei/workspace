@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
     <title>bootstrap项目实战</title>
-    <link rel="stylesheet" href="http://www.tengshengwei.com/static/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="http://www.tengshengwei.com/static/css/bootstrap-maizi.css"/>
-    <link rel="stylesheet" href="http://www.tengshengwei.com/static/css/animate.css"/>
+    <link rel="stylesheet" href="http://www.tengshengwei.com/static/front/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://www.tengshengwei.com/static/front/css/bootstrap-maizi.css"/>
+    <link rel="stylesheet" href="http://www.tengshengwei.com/static/front/css/animate.css"/>
 </head>
 <body>
 <!--导航-->
@@ -21,7 +21,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="http://www.tengshengwei.com/static/index.html" class="navbar-brand">麦子学院</a>
+            <a href="http://www.tengshengwei.com/static/front/index.html" class="navbar-brand">麦子学院</a>
         </div>
         <!--小屏幕导航按钮和logo-->
         <!--导航-->
@@ -53,7 +53,7 @@
                         本套课程适用于：1.WEB开发人员；2.网站维护人员、管理人员<br/>
                         培训技能的目标：使用bootstrap框架快速构建响应式网页，颠覆传统WEB前端！
                     </p>
-                    <img src="http://www.tengshengwei.com/static/images/php.jpg" class="img-responsive" alt="php"/>
+                    <img src="http://www.tengshengwei.com/static/front/images/php.jpg" class="img-responsive" alt="php"/>
                 </div>
                 <div class="col-md-1"></div>
             </div>
@@ -68,21 +68,21 @@
         <div class="row wow fadeInUp" data-wow-duration="0.5s">
             <div class="col-md-4">
                 <a href="http://www.maiziedu.com" target="_blank">
-                    <img src="http://www.tengshengwei.com/static/images/a.png" class="img-responsive" alt=""/>
+                    <img src="http://www.tengshengwei.com/static/front/images/a.png" class="img-responsive" alt=""/>
                     <h3>Android开发</h3>
                     <p>Android开发技术交流、问题求助、实战案例分享</p>
                 </a>
             </div>
             <div class="col-md-4">
                 <a href="http://www.maiziedu.com" target="_blank">
-                    <img src="http://www.tengshengwei.com/static/images/i.png" class="img-responsive" alt=""/>
+                    <img src="http://www.tengshengwei.com/static/front/images/i.png" class="img-responsive" alt=""/>
                     <h3>IOS开发</h3>
                     <p>iOS开发技术交流，海量iOS实战干货分享</p>
                 </a>
             </div>
             <div class="col-md-4">
                 <a href="http://www.maiziedu.com" target="_blank">
-                    <img src="http://www.tengshengwei.com/static/images/b.png" class="img-responsive" alt=""/>
+                    <img src="http://www.tengshengwei.com/static/front/images/b.png" class="img-responsive" alt=""/>
                     <h3>嵌入式底层开发</h3>
                     <p>底层嵌入式开发、实战案例等技术交流讨论</p>
                 </a>
@@ -102,7 +102,7 @@
             <p><span class="glyphicon glyphicon-grain mai-icon"></span>清晰明了的语义代码结构，更高的可读性、更利于页面维护的。</p>
         </div>
         <div class="col-md-6 wow fadeInRight">
-            <img src="http://www.tengshengwei.com/static/images/html5.jpg" class="img-responsive" alt=""/>
+            <img src="http://www.tengshengwei.com/static/front/images/html5.jpg" class="img-responsive" alt=""/>
         </div>
     </div>
 </section>
@@ -112,7 +112,7 @@
 <section id="bootstrap">
     <div class="container wow fadeInUp">
         <div class="col-md-6">
-            <img src="http://www.tengshengwei.com/static/images/Bootstrap.jpg" class="img-responsive" alt=""/>
+            <img src="http://www.tengshengwei.com/static/front/images/Bootstrap.jpg" class="img-responsive" alt=""/>
         </div>
         <div class="col-md-6">
             <h2>bootstrap实战视频教程</h2>
@@ -133,7 +133,7 @@
             </div>
             <div class="col-md-3">
                 <div class="course">
-                    <img src="http://www.tengshengwei.com/static/images/swift.jpg" class="img-responsive" alt=""/>
+                    <img src="http://www.tengshengwei.com/static/front/images/swift.jpg" class="img-responsive" alt=""/>
                     <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
                         加入学习
                     </a>
@@ -141,7 +141,7 @@
             </div>
             <div class="col-md-3">
                 <div class="course">
-                    <img src="http://www.tengshengwei.com/static/images/swift.jpg" class="img-responsive" alt=""/>
+                    <img src="http://www.tengshengwei.com/static/front/images/swift.jpg" class="img-responsive" alt=""/>
                     <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
                         加入学习
                     </a>
@@ -149,7 +149,7 @@
             </div>
             <div class="col-md-3">
                 <div class="course">
-                    <img src="http://www.tengshengwei.com/static/images/swift.jpg" class="img-responsive" alt=""/>
+                    <img src="http://www.tengshengwei.com/static/front/images/swift.jpg" class="img-responsive" alt=""/>
                     <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
                         加入学习
                     </a>
@@ -157,7 +157,7 @@
             </div>
             <div class="col-md-3">
                 <div class="course">
-                    <img src="http://www.tengshengwei.com/static/images/swift.jpg" class="img-responsive" alt=""/>
+                    <img src="http://www.tengshengwei.com/static/front/images/swift.jpg" class="img-responsive" alt=""/>
                     <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
                         加入学习
                     </a>
@@ -165,7 +165,7 @@
             </div>
             <div class="col-md-3">
                 <div class="course">
-                    <img src="http://www.tengshengwei.com/static/images/swift.jpg" class="img-responsive" alt=""/>
+                    <img src="http://www.tengshengwei.com/static/front/images/swift.jpg" class="img-responsive" alt=""/>
                     <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
                         加入学习
                     </a>
@@ -173,7 +173,7 @@
             </div>
             <div class="col-md-3">
                 <div class="course">
-                    <img src="http://www.tengshengwei.com/static/images/swift.jpg" class="img-responsive" alt=""/>
+                    <img src="http://www.tengshengwei.com/static/front/images/swift.jpg" class="img-responsive" alt=""/>
                     <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
                         加入学习
                     </a>
@@ -181,7 +181,7 @@
             </div>
             <div class="col-md-3">
                 <div class="course">
-                    <img src="http://www.tengshengwei.com/static/images/swift.jpg" class="img-responsive" alt=""/>
+                    <img src="http://www.tengshengwei.com/static/front/images/swift.jpg" class="img-responsive" alt=""/>
                     <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
                         加入学习
                     </a>
@@ -189,7 +189,7 @@
             </div>
             <div class="col-md-3">
                 <div class="course">
-                    <img src="http://www.tengshengwei.com/static/images/swift.jpg" class="img-responsive" alt=""/>
+                    <img src="http://www.tengshengwei.com/static/front/images/swift.jpg" class="img-responsive" alt=""/>
                     <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
                         加入学习
                     </a>
@@ -219,7 +219,7 @@
                 </button>
             </div>
             <div class="col-md-6">
-                <img src="http://www.tengshengwei.com/static/images/app-banner.jpg" class="img-responsive" alt=""/>
+                <img src="http://www.tengshengwei.com/static/front/images/app-banner.jpg" class="img-responsive" alt=""/>
             </div>
         </div>
     </div>
@@ -296,9 +296,9 @@
 
 
 <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="http://www.tengshengwei.com/static/js/bootstrap.min.js"></script>
-<script src="http://www.tengshengwei.com/static/js/jquery.singlePageNav.min.js"></script>
-<script src="http://www.tengshengwei.com/static/js/wow.min.js"></script>
+<script src="http://www.tengshengwei.com/static/front/js/bootstrap.min.js"></script>
+<script src="http://www.tengshengwei.com/static/front/js/jquery.singlePageNav.min.js"></script>
+<script src="http://www.tengshengwei.com/static/front/js/wow.min.js"></script>
 <script>
     $(function(){
         /*导航跳转效果插件*/

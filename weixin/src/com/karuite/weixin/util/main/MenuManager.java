@@ -31,7 +31,7 @@ public class MenuManager {
 		ViewButton btn11 = new ViewButton();
 		btn11.setName("联系业主");
 		btn11.setType("view");
-		btn11.setUrl("http://120.25.209.211/karuite-weixin/tdTable/tdTable_table.html");
+		btn11.setUrl("http://www.tengshengwei.com/weixin/tdTable/tdTable_table.html");
 		
 		ClickButton btn12 = new ClickButton();
 		btn12.setName("企业微站");
@@ -51,7 +51,7 @@ public class MenuManager {
 		ViewButton btn21 = new ViewButton();
 		btn21.setName("天玓官微");
 		btn21.setType("view");
-		btn21.setUrl("http://120.25.209.211/karuite-weixin/noMean/ManiaIndex.html");
+		btn21.setUrl("http://www.tengshengwei.com/weixin/noMean/ManiaIndex.html");
 
 		ViewButton btn22 = new ViewButton();
 		btn22.setName("社区样例");

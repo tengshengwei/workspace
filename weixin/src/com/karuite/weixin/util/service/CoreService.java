@@ -40,7 +40,7 @@ public class CoreService {
         String respMessage = null;  
         try {  
             // 默认返回的文本消息内容  
-            String respContent = "请求处理异常，请稍候尝试！";  
+            String respContent = "";  
   
             // xml请求解析  
             Map<String, String> requestMap = MessageUtil.parseXml(request);  
@@ -147,7 +147,7 @@ public class CoreService {
                 String eventType = requestMap.get("Event");  
                 // 订阅  
                 if (eventType.equals(MessageUtil.EVENT_TYPE_SUBSCRIBE)) {  
-                    respContent = "感谢您关注了【1989网络咨询】";
+                    respContent = "感谢关注【1989网络咨询】";
                     
                 }  
                 // 取消订阅  

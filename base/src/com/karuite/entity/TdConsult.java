@@ -9,15 +9,16 @@ public class TdConsult implements java.io.Serializable {
 
 	private static final long serialVersionUID = -7727973772823431603L;
 	
-	private int id;
+	private String id;
 	private String username;
-	private String password;
-	private Date registertime;
+	private String phonenumber;
+	private String messagecontent;
+	private Date createtime;
 	
-	public int getId() {
+	public String getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	public String getUsername() {
@@ -26,29 +27,36 @@ public class TdConsult implements java.io.Serializable {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	public String getPassword() {
-		return password;
+	public String getPhonenumber() {
+		return phonenumber;
 	}
-	public void setPassword(String password) {
-		this.password = password;
+	public void setPhonenumber(String phonenumber) {
+		this.phonenumber = phonenumber;
 	}
-	public Date getRegistertime() {
-		return registertime;
+	public String getMessagecontent() {
+		return messagecontent;
 	}
-	public void setRegistertime(Date registertime) {
-		this.registertime = registertime;
+	public void setMessagecontent(String messagecontent) {
+		this.messagecontent = messagecontent;
+	}
+	public Date getCreatetime() {
+		return createtime;
+	}
+	public void setCreatetime(Date createtime) {
+		this.createtime = createtime;
 	}
 	
-	public TdConsult()
-	{
+	public TdConsult() {
 		
 	}
 	
-	public TdConsult(int id, String username, String password, Date registertime) {
+	public TdConsult(String id, String username, String phonenumber,
+			String messagecontent, Date createtime) {
 		this.id = id;
 		this.username = username;
-		this.password = password;
-		this.registertime = registertime;
+		this.phonenumber = phonenumber;
+		this.messagecontent = messagecontent;
+		this.createtime = createtime;
 	}
 
 }

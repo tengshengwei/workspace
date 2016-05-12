@@ -24,8 +24,8 @@ import com.mchange.v2.c3p0.DataSources;
  */
 public class MySQLUtil {
 
-	private static String url = "jdbc:mysql://localhost:3306/karuite?useUnicode=true&characterEncoding=utf8";;
-	private static String username = "root";
+	private static String url = "jdbc:mysql://112.74.1.145:3306/karuite?useUnicode=true&characterEncoding=utf8";;
+	private static String username = "tengshengwei";
 	private static String pwd = "123456";
 
 	private static DataSource ds_pooled;
