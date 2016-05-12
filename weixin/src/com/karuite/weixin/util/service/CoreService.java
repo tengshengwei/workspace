@@ -40,7 +40,7 @@ public class CoreService {
         String respMessage = null;  
         try {  
             // 默认返回的文本消息内容  
-            String respContent = "暂不支持该类型消息";  
+            String respContent = "稍后咨询师会与您取得联系";  
   
             // xml请求解析  
             Map<String, String> requestMap = MessageUtil.parseXml(request);  
@@ -63,7 +63,7 @@ public class CoreService {
   
             // 文本消息
 			if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_TEXT)) {
-				String content = requestMap.get("Content").trim();
+//				String content = requestMap.get("Content").trim();
 //				if (content.equals("附近")) {
 //					respContent = getUsage();
 //				}
@@ -96,7 +96,7 @@ public class CoreService {
 //						}
 //					}
 //				} else {
-					respContent = ChatService.chat(fromUserName, createTime, content);
+//					respContent = ChatService.chat(fromUserName, createTime, content);
 //				}
 			}
             // 图片消息  
