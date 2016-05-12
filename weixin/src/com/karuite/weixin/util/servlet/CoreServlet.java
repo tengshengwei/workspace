@@ -75,7 +75,7 @@ public class CoreServlet extends HttpServlet {
 		// 如果索引目录不存在则创建索引
 		if (!indexDir.exists())
 		{
-		//	ChatService.createIndex();
+			ChatService.createIndex();
 		}
 	}
 }
