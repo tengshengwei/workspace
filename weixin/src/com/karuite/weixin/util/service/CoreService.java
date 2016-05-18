@@ -40,7 +40,7 @@ public class CoreService {
         String respMessage = null;  
         try {  
             // 默认返回的文本消息内容  
-            String respContent = "稍后咨询师会与您取得联系";  
+            String respContent = "传播全人类的知识与智慧";  
   
             // xml请求解析  
             Map<String, String> requestMap = MessageUtil.parseXml(request);  
@@ -98,10 +98,11 @@ public class CoreService {
 //				} else {
 //					respContent = ChatService.chat(fromUserName, createTime, content);
 //				}
+				respContent = "接收到文本消息";  
 			}
             // 图片消息  
             else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_IMAGE)) {  
-            //	respContent = "正在建设，稍后上线！";  
+            	respContent = "接收到图片消息";  
             }  
             // 地理位置消息  
             else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_LOCATION)) {  
@@ -127,19 +128,24 @@ public class CoreService {
 //				buffer.append("        附近KTV").append("\n");
 //				buffer.append("        附近厕所").append("\n");
 //				buffer.append("必须以“附近”两个字开头！");
-//				respContent = buffer.toString(); 
+//				respContent = buffer.toString();
+            	respContent = "接收到地理位置消息"; 
             }  
             // 链接消息  
             else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_LINK)) {  
-            //	respContent = "正在建设，稍后上线！";  
+            	respContent = "接收到链接消息";  
             }  
             // 音频消息  
             else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_VOICE)) {  
-            //	respContent = "正在建设，稍后上线！";  
+            	respContent = "接收到音频消息";  
             }
-            // 音频消息  
+            // 视频消息  
             else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_VIDEO)) {  
-            //	respContent = "正在建设，稍后上线！";  
+            	respContent = "接收到视频消息";  
+            }  
+			// 小视频消息  
+            else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_SHORTVIDEO)) {  
+            	respContent = "接收到小视频消息";  
             }  
             // 事件推送  
             else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_EVENT)) {  
@@ -147,7 +153,7 @@ public class CoreService {
                 String eventType = requestMap.get("Event");  
                 // 订阅  
                 if (eventType.equals(MessageUtil.EVENT_TYPE_SUBSCRIBE)) {  
-                    respContent = "感谢关注【1989网络咨询】";
+                    respContent = "欢迎订阅";
                     
                 }  
                 // 取消订阅  

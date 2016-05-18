@@ -13,7 +13,10 @@ import java.util.Arrays;
 public class SignUtil {
 	
 	// 与接口配置信息中的Token要一致
-	private static String token = "1989";
+//	private static String token = "1989"; //1989
+	private static String token = "1989gongkaike"; //1989公开课
+	
+//	private static String token = "tiandiyezhu"; //天玓业主交流平台
 	
 	/**
 	 * 验证签名
