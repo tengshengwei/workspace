@@ -6,6 +6,7 @@
   
   <!-- 指明满足"/*.jsp*"的页面，将被排除，不被装饰 -->
   <mapping path="/index.jsp*" exclue="true" />
+  <mapping path="/index2.jsp*" exclue="true" />
   <mapping path="/addmanager.jsp*" exclue="true" />
   <mapping path="/manager.jsp*" exclue="true" />
   <mapping path="/tblConsult/consult.html*" exclue="true" /> 

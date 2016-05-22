@@ -2,183 +2,118 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="zh-CN">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>DouPHP 管理中心</title>
-<meta name="Copyright" content="Douco Design." />
-<link href="http://www.tengshengwei.com/static2/back/css/public.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="http://www.tengshengwei.com/static2/back/js/jquery.min.js"></script>
-<script type="text/javascript" src="http://www.tengshengwei.com/static2/back/js/global.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <title>1989云服务开发者平台</title>
+    <link rel="stylesheet" href="http://www.tengshengwei.com/static/back/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://www.tengshengwei.com/static/back/css/bootstrap-maizi.css"/>
 </head>
 <body>
-<div id="dcWrap"> <div id="dcHead">
- <div id="head">
-  
-  <div class="nav">
-  
-   <ul class="navRight">
-    <li class="M noLeft"><a href="JavaScript:void(0);">您好，admin</a>
-     <div class="drop mUser">
-      <a href="JavaScript:void(0);">退出</a>
-     </div>
-    </li>
-   </ul>
+<!--导航-->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!--小屏幕导航按钮和logo-->
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.jsp" class="navbar-brand">Maizi Admin</a>
+        </div>
+    </div>
+</nav>
+<!--导航-->
 
-  </div>
- </div>
+<!--警告框-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">网站数据统计</div>
+                <div class="panel-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>用户id</th>
+                                <th>姓名</th>
+                                <th>联系方式</th>
+                                <th>咨询内容</th>
+                                <th>创建时间</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                 <th scope="row">1</th>
+                                 <td>滕声威</td>
+                                 <td>13316934721</td>
+                                 <td>我们公司有微信公众号与pc端，需要找个外包公司做，看到后请回复。谢谢</td>
+                                 <td>2016-05-12 21:30:25</td>
+                            </tr>
+                            <tr>
+                                 <th scope="row">2</th>
+                                 <td>滕声威</td>
+                                 <td>13316934721</td>
+                                 <td>我们公司有微信公众号与pc端，需要找个外包公司做，看到后请回复。谢谢</td>
+                                 <td>2016-05-12 21:30:25</td>
+                            </tr>
+                            <tr>
+                                 <th scope="row">3</th>
+                                 <td>滕声威</td>
+                                 <td>13316934721</td>
+                                 <td>我们公司有微信公众号与pc端，需要找个外包公司做，看到后请回复。谢谢</td>
+                                 <td>2016-05-12 21:30:25</td>
+                            </tr>
+                            <tr>
+                                 <th scope="row">4</th>
+                                 <td>滕声威</td>
+                                 <td>13316934721</td>
+                                 <td>我们公司有微信公众号与pc端，需要找个外包公司做，看到后请回复。谢谢</td>
+                                 <td>2016-05-12 21:30:25</td>
+                            </tr>
+                            <tr>
+                                 <th scope="row">5</th>
+                                 <td>滕声威</td>
+                                 <td>13316934721</td>
+                                 <td>我们公司有微信公众号与pc端，需要找个外包公司做，看到后请回复。谢谢</td>
+                                 <td>2016-05-12 21:30:25</td>
+                            </tr>
+                            <tr>
+                                 <th scope="row">6</th>
+                                 <td>滕声威</td>
+                                 <td>13316934721</td>
+                                 <td>我们公司有微信公众号与pc端，需要找个外包公司做，看到后请回复。谢谢</td>
+                                 <td>2016-05-12 21:30:25</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<!-- dcHead 结束 --> <div id="dcLeft"><div id="menu">
- <ul class="top">
-  <li><a href="index.jsp"><i class="home"></i><em>管理首页</em></a></li>
- </ul>
- <ul>
-  <li><a href="manager.jsp"><i class="system"></i><em>会员管理</em></a></li>
-  <li><a href="JavaScript:void(0);"><i class="nav"></i><em>订单管理</em></a></li>
-  <li><a href="JavaScript:void(0);"><i class="show"></i><em>商品管理</em></a></li>
-  <li><a href="JavaScript:void(0);"><i class="page"></i><em>营销功能</em></a></li>
- </ul>
-   <ul>
-  <li><a href="JavaScript:void(0);"><i class="productCat"></i><em>活动管理</em></a></li>
-  <li><a href="JavaScript:void(0);"><i class="product"></i><em>入驻管理</em></a></li>
- </ul>
-  <ul>
-  <li><a href="JavaScript:void(0);"><i class="articleCat"></i><em>合作模式</em></a></li>
-  <li><a href="JavaScript:void(0);"><i class="article"></i><em>小秘书</em></a></li>
- </ul>
-</div></div>
- <div id="dcMain"> <!-- 当前位置 -->
-<div id="urHere">DouPHP 管理中心</div>  <div id="index" class="mainBox" style="padding-top:18px;height:auto!important;height:550px;min-height:550px;">
-     
-   <table width="100%" border="0" cellspacing="0" cellpadding="0" class="indexBoxTwo">
-    <tr>
-     <td width="65%" valign="top" class="pr">
-      <div class="indexBox">
-       <div class="boxTitle">网站基本信息</div>
-       <ul>
-        <table width="100%" border="0" cellspacing="0" cellpadding="7" class="tableBasic">
-         <tr>
-          <td width="120">单页面数：</td>
-          <td><strong>6</strong></td>
-          <td width="100">文章总数：</td>
-          <td><strong>10</strong></td>
-         </tr>
-         <tr>
-          <td>商品总数：</td>
-          <td><strong>15</strong></td>
-          <td>系统语言：</td>
-          <td><strong>zh_cn</strong></td>
-         </tr>
-         <tr>
-          <td>URL 重写：</td>
-          <td><strong>关闭<a href="system.php" class="cueRed ml">（点击开启）</a> 
-           </strong></td>
-          <td>编码：</td>
-          <td><strong>UTF-8</strong></td>
-         </tr>
-         <tr>
-          <td>站点地图：</td>
-          <td><strong>开启</strong></td>
-          <td>站点模板：</td>
-          <td><strong>default</strong></td>
-         </tr>
-         <tr>
-          <td>DouPHP版本：</td>
-          <td><strong>v1.3 Release 20160125</strong></td>
-          <td>安装日期：</td>
-          <td><strong>2016-02-25</strong></td>
-         </tr>
-        </table>
-       </ul>
-      </div>
-     </td>
-     <td valign="top" class="pl">
-      <div class="indexBox">
-       <div class="boxTitle">管理员  登录记录</div>
-       <ul>
-        <table width="100%" border="0" cellspacing="0" cellpadding="7" class="tableBasic">
-         <tr>
-          <th width="45%">IP地址</th>
-          <th width="55%">操作时间</th>
-         </tr>
-                  <tr>
-          <td align="center">127.0.0.1</td>
-          <td align="center">2016-02-25 23:29:08</td>
-         </tr>
-                  <tr>
-          <td align="center">127.0.0.1</td>
-          <td align="center">2016-02-25 13:48:48</td>
-         </tr>
-                  <tr>
-          <td align="center">127.0.0.1</td>
-          <td align="center">2013-10-16 09:43:01</td>
-         </tr>
-                  <tr>
-          <td align="center">127.0.0.1</td>
-          <td align="center">2013-10-16 09:42:58</td>
-         </tr>
-                 </table>
-       </ul>
-      </div>
-     </td>
-    </tr>
-   </table>
-   <div class="indexBox">
-    <div class="boxTitle">服务器信息</div>
-    <ul>
-     <table width="100%" border="0" cellspacing="0" cellpadding="7" class="tableBasic">
-      <tr>
-       <td width="120" valign="top">PHP 版本：</td>
-       <td valign="top">5.3.29 </td>
-       <td width="100" valign="top">MySQL 版本：</td>
-       <td valign="top">5.5.40</td>
-       <td width="100" valign="top">服务器操作系统：</td>
-       <td valign="top">WINNT(127.0.0.1)</td>
-      </tr>
-      <tr>
-       <td valign="top">文件上传限制：</td>
-       <td valign="top">2M</td>
-       <td valign="top">GD 库支持：</td>
-       <td valign="top">是</td>
-       <td valign="top">Web 服务器：</td>
-       <td valign="top">Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9</td>
-      </tr>
-     </table>
-    </ul>
-   </div>
-   <div class="indexBox">
-    <div class="boxTitle">系统开发</div>
-    <ul>
-     <table width="100%" border="0" cellspacing="0" cellpadding="7" class="tableBasic">
-      <tr>
-       <td width="120"> DouPHP官网： </td>
-       <td><a href="http://www.douco.com" target="_blank">http://www.douco.com</a></td>
-      </tr>
-      <tr>
-       <td> 开发者社区： </td>
-       <td><a href="http://bbs.douco.cn" target="_blank">http://bbs.douco.cn </a><em>（安装使用 模板交流 BUG反馈 意见建议）</em></td>
-      </tr>
-      <tr>
-       <td> 贡献者： </td>
-       <td>Wooyun.org, Pany, Tea</td>
-      </tr>
-      <tr>
-       <td> 系统使用协议： </td>
-       <td><a href="http://www.douco.com/license.html" target="_blank">http://www.douco.com/license.html</a><em>（您可以免费使用DouPHP（不限商用），但必须保留相关版权信息。）</em></td>
-      </tr>
-     </table>
-    </ul>
-   </div>
-    
-  </div>
- </div>
- <div class="clear"></div>
-<div id="dcFooter">
- <div id="footer">
-  <div class="line"></div>
-  <ul>
-   版权所有 © 2013-2015 漳州豆壳网络科技有限公司，并保留所有权利。
-  </ul>
- </div>
-</div><!-- dcFooter 结束 -->
-<div class="clear"></div> </div>
+
+
+
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Copyright&nbsp;©&nbsp;2012-2015&nbsp;&nbsp;www.maiziedu.com&nbsp;&nbsp;蜀ICP备13014270号-4
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer-->
+
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://www.tengshengwei.com/static/back/js/bootstrap.min.js"></script>
+<script src="http://www.tengshengwei.com/static/back/js/Chart.js"></script>
+<script src="http://www.tengshengwei.com/static/back/js/script.js"></script>
 </body>
 </html>

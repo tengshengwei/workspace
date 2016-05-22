@@ -28,7 +28,7 @@
 </div>
 <!-- dcHead 结束 --> <div id="dcLeft"><div id="menu">
  <ul class="top">
-  <li><a href="index.jsp"><i class="home"></i><em>管理首页</em></a></li>
+  <li><a href="index2.jsp"><i class="home"></i><em>管理首页</em></a></li>
  </ul>
  <ul>
   <li><a href="manager.jsp"><i class="system"></i><em>会员管理</em></a></li>
