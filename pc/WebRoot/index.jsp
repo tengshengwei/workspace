@@ -21,7 +21,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="http://www.tengshengwei.com/static/front/index.html" class="navbar-brand">1989开发者服务平台</a>
+            <a href="http://www.tengshengwei.com/1989/pc/" class="navbar-brand">1989开发者服务平台</a>
         </div>
         <!--小屏幕导航按钮和logo-->
         <!--导航-->

@@ -21,7 +21,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="http://www.tengshengwei.com/static/front/index.html" class="navbar-brand">1989咨询</a>
+            <a href="http://www.tengshengwei.com/consult/pc/" class="navbar-brand">1989咨询</a>
         </div>
         <!--小屏幕导航按钮和logo-->
         <!--导航-->
@@ -30,7 +30,7 @@
                 <li><a href="#home">首页</a></li>
                 <li><a href="#bbs">咨询服务</a></li>
                 <li><a href="#html5">平台入驻</a></li>
-                <li><a href="#event">往期活动</a></li>
+                <li><a href="#event">主题沙龙</a></li>
                 <li><a href="#course">成功案例</a></li>
                 <li><a href="#app">合作模式</a></li>
                 <li><a href="#contact">联系我们</a></li>
@@ -178,7 +178,7 @@
     <div class="container">
         <div class="row  wow fadeInUp">
             <div class="col-md-6">
-                <h2>线下沙龙</h2>
+                <h2>即将启程</h2>
                 <p>
                     成立4年以来举办各种线上、线下活动五百余场,覆盖北京、上海、广州、深圳、香港、澳门、台湾等城市,在互联网业内得到了广泛关注和高度好评。
                 </p>
