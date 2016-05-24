@@ -93,7 +93,7 @@
      </td>
      <td valign="top" class="pl">
       <div class="indexBox">
-       <div class="boxTitle">管理员  登录记录</div>
+       <div class="boxTitle">管理员登录记录</div>
        <ul>
         <table width="100%" border="0" cellspacing="0" cellpadding="7" class="tableBasic">
          <tr>
