@@ -12,6 +12,8 @@ public class TdConsult implements java.io.Serializable {
 	private String id;
 	private String username;
 	private String phonenumber;
+	private String companyname;
+	private String providingprofess;
 	private String messagecontent;
 	private Date createtime;
 	
@@ -33,6 +35,18 @@ public class TdConsult implements java.io.Serializable {
 	public void setPhonenumber(String phonenumber) {
 		this.phonenumber = phonenumber;
 	}
+	public String getCompanyname() {
+		return companyname;
+	}
+	public void setCompanyname(String companyname) {
+		this.companyname = companyname;
+	}
+	public String getProvidingprofess() {
+		return providingprofess;
+	}
+	public void setProvidingprofess(String providingprofess) {
+		this.providingprofess = providingprofess;
+	}
 	public String getMessagecontent() {
 		return messagecontent;
 	}
@@ -51,12 +65,16 @@ public class TdConsult implements java.io.Serializable {
 	}
 	
 	public TdConsult(String id, String username, String phonenumber,
-			String messagecontent, Date createtime) {
+			String companyname, String providingprofess, String messagecontent,
+			Date createtime) {
 		this.id = id;
 		this.username = username;
 		this.phonenumber = phonenumber;
+		this.companyname = companyname;
+		this.providingprofess = providingprofess;
 		this.messagecontent = messagecontent;
 		this.createtime = createtime;
 	}
+	
 
 }

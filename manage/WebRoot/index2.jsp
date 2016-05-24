@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>1989咨询-创业者的技术合伙人！</title>
+<title>1989咨询 - 管理后台</title>
 <meta name="Copyright" content="Douco Design." />
 <link href="http://www.tengshengwei.com/static2/back/css/public.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="http://www.tengshengwei.com/static2/back/js/jquery.min.js"></script>
@@ -28,7 +28,7 @@
 </div>
 <!-- dcHead 结束 --> <div id="dcLeft"><div id="menu">
  <ul class="top">
-  <li><a href="index2.jsp"><i class="home"></i><em>管理首页</em></a></li>
+  <li><a href="index.jsp"><i class="home"></i><em>管理首页</em></a></li>
  </ul>
  <ul>
   <li><a href="manager.jsp"><i class="system"></i><em>会员管理</em></a></li>
@@ -43,10 +43,11 @@
   <ul>
   <li><a href="JavaScript:void(0);"><i class="articleCat"></i><em>合作模式</em></a></li>
   <li><a href="JavaScript:void(0);"><i class="article"></i><em>小秘书</em></a></li>
+  <li><a href="JavaScript:void(0);"><i class="managerLog"></i><em>客户咨询</em></a></li>
  </ul>
 </div></div>
  <div id="dcMain"> <!-- 当前位置 -->
-<div id="urHere">DouPHP 管理中心</div>  <div id="index" class="mainBox" style="padding-top:18px;height:auto!important;height:550px;min-height:550px;">
+<div id="urHere">1989咨询 - 管理后台</div>  <div id="index" class="mainBox" style="padding-top:18px;height:auto!important;height:550px;min-height:550px;">
      
    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="indexBoxTwo">
     <tr>

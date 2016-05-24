@@ -67,21 +67,21 @@
     <div class="container">
         <div class="row wow fadeInUp" data-wow-duration="0.5s">
             <div class="col-md-4">
-                <a href="http://www.maiziedu.com" target="_blank">
+                <a href="javascript:;" target="_blank">
                     <img src="http://www.tengshengwei.com/static/front/images/a.png" class="img-responsive" alt=""/>
                     <h3>PC开发</h3>
                     <p>PC开发技术交流、问题求助、成功案例分享</p>
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="http://www.maiziedu.com" target="_blank">
+                <a href="javascript:;" target="_blank">
                     <img src="http://www.tengshengwei.com/static/front/images/i.png" class="img-responsive" alt=""/>
                     <h3>微信公众号开发</h3>
                     <p>微信公众号开发技术交流、问题求助、成功案例分享</p>
                 </a>
             </div>
             <div class="col-md-4">
-                <a href="http://www.maiziedu.com" target="_blank">
+                <a href="javascript:;" target="_blank">
                     <img src="http://www.tengshengwei.com/static/front/images/b.png" class="img-responsive" alt=""/>
                     <h3>管理后台开发</h3>
                     <p>管理后台开发技术交流、问题求助、成功案例分享</p>
@@ -135,7 +135,7 @@
             <div class="col-md-3">
                 <div class="course">
                     <img src="http://www.tengshengwei.com/static/front/images/swift.jpg" class="img-responsive" alt=""/>
-                    <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
+                    <a href="javascript:;" class="btn btn-primary" target="_blank" role="button">
                         我的家
                     </a>
                 </div>
@@ -143,7 +143,7 @@
             <div class="col-md-3">
                 <div class="course">
                     <img src="http://www.tengshengwei.com/static/front/images/swift.jpg" class="img-responsive" alt=""/>
-                    <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
+                    <a href="javascript:;" class="btn btn-primary" target="_blank" role="button">
                         运之动
                     </a>
                 </div>
@@ -151,7 +151,7 @@
             <div class="col-md-3">
                 <div class="course">
                     <img src="http://www.tengshengwei.com/static/front/images/swift.jpg" class="img-responsive" alt=""/>
-                    <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
+                    <a href="javascript:;" class="btn btn-primary" target="_blank" role="button">
                         嗨乐跑
                     </a>
                 </div>
@@ -159,7 +159,7 @@
             <div class="col-md-3">
                 <div class="course">
                     <img src="http://www.tengshengwei.com/static/front/images/swift.jpg" class="img-responsive" alt=""/>
-                    <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
+                    <a href="javascript:;" class="btn btn-primary" target="_blank" role="button">
                         掌上直聘
                     </a>
                 </div>
@@ -167,7 +167,7 @@
             <div class="col-md-3">
                 <div class="course">
                     <img src="http://www.tengshengwei.com/static/front/images/swift.jpg" class="img-responsive" alt=""/>
-                    <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
+                    <a href="javascript:;" class="btn btn-primary" target="_blank" role="button">
                         养牛派
                     </a>
                 </div>
@@ -175,7 +175,7 @@
             <div class="col-md-3">
                 <div class="course">
                     <img src="http://www.tengshengwei.com/static/front/images/swift.jpg" class="img-responsive" alt=""/>
-                    <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
+                    <a href="javascript:;" class="btn btn-primary" target="_blank" role="button">
                         猿团汽车宝
                     </a>
                 </div>
@@ -183,7 +183,7 @@
             <div class="col-md-3">
                 <div class="course">
                     <img src="http://www.tengshengwei.com/static/front/images/swift.jpg" class="img-responsive" alt=""/>
-                    <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
+                    <a href="javascript:;" class="btn btn-primary" target="_blank" role="button">
                         珠宝商城
                     </a>
                 </div>
@@ -191,7 +191,7 @@
             <div class="col-md-3">
                 <div class="course">
                     <img src="http://www.tengshengwei.com/static/front/images/swift.jpg" class="img-responsive" alt=""/>
-                    <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
+                    <a href="javascript:;" class="btn btn-primary" target="_blank" role="button">
                         人人销售
                     </a>
                 </div>
@@ -199,7 +199,7 @@
             <div class="col-md-3">
                 <div class="course">
                     <img src="http://www.tengshengwei.com/static/front/images/swift.jpg" class="img-responsive" alt=""/>
-                    <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
+                    <a href="javascript:;" class="btn btn-primary" target="_blank" role="button">
                         趣付宝
                     </a>
                 </div>
@@ -207,7 +207,7 @@
             <div class="col-md-3">
                 <div class="course">
                     <img src="http://www.tengshengwei.com/static/front/images/swift.jpg" class="img-responsive" alt=""/>
-                    <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
+                    <a href="javascript:;" class="btn btn-primary" target="_blank" role="button">
                         蜀刀
                     </a>
                 </div>
@@ -215,7 +215,7 @@
             <div class="col-md-3">
                 <div class="course">
                     <img src="http://www.tengshengwei.com/static/front/images/swift.jpg" class="img-responsive" alt=""/>
-                    <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
+                    <a href="javascript:;" class="btn btn-primary" target="_blank" role="button">
                         随饮
                     </a>
                 </div>
@@ -223,7 +223,7 @@
             <div class="col-md-3">
                 <div class="course">
                     <img src="http://www.tengshengwei.com/static/front/images/swift.jpg" class="img-responsive" alt=""/>
-                    <a href="http://www.maiziedu.com" class="btn btn-primary" target="_blank" role="button">
+                    <a href="javascript:;" class="btn btn-primary" target="_blank" role="button">
                         想溜
                     </a>
                 </div>
@@ -278,22 +278,22 @@
                         <p>
                             <span class="glyphicon glyphicon-home"></span>
                             &nbsp;
-                            地址:成都市高新区天府软件园D5-11
+                            地址:深圳市威新软件园D3-3
                         </p>
                         <p>
                             <span class="glyphicon glyphicon-phone-alt"></span>
                             &nbsp;
-                            联系电话：028-86567913
+                            联系电话：13316934721
                         </p>
                         <p>
                             <span class="glyphicon glyphicon-envelope"></span>
                             &nbsp;
-                            邮箱:hr@maiziedu.com
+                            邮箱:tengshengwei@163.com
                         </p>
                     </address>
                 </div>
                 <div class="col-md-6  wow fadeInRight">
-                    <form action="#" method="post">
+                    <form action="javascript:;" method="post">
                         <div class="col-md-12">
                             <input type="text" class="form-control" placeholder="您的姓名"/>
                         </div>
@@ -326,7 +326,7 @@
         <div class="row">
             <div class="col-md-12">
                 <p>
-                    Copyright&nbsp;©&nbsp;2012-2015&nbsp;&nbsp;www.maiziedu.com&nbsp;&nbsp;蜀ICP备13014270号-4
+                    Copyright&nbsp;©&nbsp;2012-2015&nbsp;&nbsp;www.tengshengwei.com&nbsp;&nbsp;蜀ICP备13014270号-4
                 </p>
             </div>
         </div>
