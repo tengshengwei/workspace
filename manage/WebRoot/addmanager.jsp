@@ -50,7 +50,7 @@
    <!-- 当前位置 -->
 <div id="urHere">1989咨询 - 管理后台<b>></b><strong>添加会员</strong> </div>   <div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
     <h3><a href="manager.jsp" class="actionBtn">返回列表</a>添加会员</h3>
-            <form action="manager.php?rec=insert" method="post">
+            <form action="javascript:;" method="post">
      <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
       <tr>
        <td width="100" align="right">管理员名称</td>
