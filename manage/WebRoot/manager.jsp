@@ -51,7 +51,7 @@
 <div id="urHere">1989咨询 - 管理后台<b>></b><strong>会员管理</strong> </div>   <div class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
         <h3><a href="addmanager.jsp?rec=add" class="actionBtn add">添加会员</a>会员列表</h3>
     <div class="filter">
-    <form action="article.php" method="post">
+    <form action="javascript:;">
      <select name="cat_id">
       <option value="0">未分类</option>
                   <option value="1"> 注册时间</option>
@@ -192,7 +192,7 @@
     </form>
     </div>
     <div class="clear"></div>
-    <div class="pager">总计 10 个记录，共 1 页，当前第 1 页 | <a href="article.php?page=1">第一页</a> 上一页 下一页 <a href="article.php?page=1">最末页</a></div>           </div>
+    <div class="pager">总计 10 个记录，共 1 页，当前第 1 页 | <a href="javascript:;">首页</a> <a href="javascript:;">上一页</a> <a href="javascript:;">下一页</a> <a href="javascript:;">尾页</a></div>           </div>
  </div>
  <div class="clear"></div>
 <div id="dcFooter">
